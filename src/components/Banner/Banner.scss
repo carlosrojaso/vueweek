@@ -1,0 +1,62 @@
+
+$banner-width: 100vw;
+$banner-height: 80vh;
+$color2: #42b983;
+
+.Banner {
+  width: $banner-width;
+  height: $banner-height;
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    // 
+    background-image: url('https://angularweek.org/assets/img/back-topo.jpg');
+    background-size: 100%;
+    background-origin: border-box;
+    background-position: 50%;
+  }
+
+  &__title {
+    font-size: 63px;
+    font-weight: 400;
+    color: $color2;
+    background-color: white;
+    text-align: center;
+    width: 40%;
+    padding: 0.5em;
+    position: relative;
+  }
+
+  &__logo {
+    position: relative;
+    width: 63px;
+    top: 0.1em;
+  }
+
+  &__date {
+    background-color: $color2;
+    color: white;
+    padding: 0.5em;
+  }
+
+  &__streamingLink {
+    background-color: $color2;
+    border-radius: 3px;
+    padding: 0.2em 0.5em;
+    text-decoration: none;
+    &,
+    &:hover,
+    &:focus,
+    &:visited,
+    &:active {
+      color: white;
+    }
+
+  }
+
+}

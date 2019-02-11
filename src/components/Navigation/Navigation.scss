@@ -1,0 +1,24 @@
+
+.Navigation {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  box-shadow: 0 0 5px grey;
+
+  &__link {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &--active,
+    &.router-link-exact-active
+    {
+      color: #42b983;
+    }
+
+    &:nth-child(n+2)::before {
+      content: '|';
+      display: inline-block;
+      margin: 0 0.5em;
+    }
+  }
+}
