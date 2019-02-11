@@ -8,7 +8,7 @@ $color2: #42b983;
   height: $banner-height;
   overflow: hidden;
 
-  &-container {
+  &__container {
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -21,7 +21,7 @@ $color2: #42b983;
     background-position: 50%;
   }
 
-  &-title {
+  &__title {
     font-size: 63px;
     font-weight: 400;
     color: $color2;
@@ -32,19 +32,19 @@ $color2: #42b983;
     position: relative;
   }
 
-  &-logo {
+  &__logo {
     position: relative;
     width: 63px;
     top: 0.1em;
   }
 
-  &-date {
+  &__date {
     background-color: $color2;
     color: white;
     padding: 0.5em;
   }
 
-  &-streamingLink {
+  &__streamingLink {
     background-color: $color2;
     border-radius: 3px;
     padding: 0.2em 0.5em;
